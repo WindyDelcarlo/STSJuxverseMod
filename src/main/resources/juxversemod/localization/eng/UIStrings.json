@@ -1,0 +1,28 @@
+{
+  "${modID}:Offload": {
+    "TEXT": [
+      "Exhaust from your hand:"
+    ]
+  },
+  "${modID}:ThoroughStudy": {
+    "TEXT": [
+      "Exhaust from your discard pile:"
+    ]
+  },
+  "${modID}:Infohazard": {
+    "TEXT": [
+      "Exhaust from your hand:"
+    ]
+  },
+  "${modID}:HarmonicReplica": {
+    "TEXT": [
+      "copy:"
+    ]
+  },
+  "${modID}:StellarManifestationAction": {
+    "TEXT": ["Select cards with Constellation:"]
+  },
+  "${modID}:Chronolog": {
+    "TEXT": ["Return a card from Exhaust:"]
+  }
+}

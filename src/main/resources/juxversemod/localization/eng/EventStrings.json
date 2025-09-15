@@ -1,0 +1,16 @@
+{
+  "${modID}:ForbiddenKnowledgeEvent": {
+    "NAME": "Forbidden Knowledge",
+    "DESCRIPTIONS": [
+      "The golden light of a sunrise fills an empty library. Ominous, for a place without access to the outside, but hardly the oddest thing the Spire has to offer. NL On a small desk, tucked away in a corner, rests a nondescript black book. It feels like it whispers to you. \n\n~Reading~ ~me~ ~will~ ~grant~ ~you~ ~knowledge~ ~of~ ~abilities~ ~far~ ~beyond~ ~your~ ~own~ ~capabilities.~ \n\nYou feel compelled to read it, but you can try to resist.",
+      "The pages fill with tales and tales of full, complete, and unending truths. Looking away takes effort. Leaving the book behind is impossible.\n\n~If~ ~you~ ~follow~ ~this~ ~route~ , ~you~ ~will~ ~reach~ ~the~ ~top~",
+      "To leave the book behind is a painful testament of will, and yet you manage to do so. Every book that's talked to you so far has had an agenda. This one is no different."
+    ],
+    "OPTIONS": [
+      "[Read the Book] #rLose #r5 #rMax #rHP. #gGain #ga #gunique #grelic.",
+      "[Resist the Book] #rLose #r12 #rHP.",
+      "[Cursed With Knowledge] Hopefully this burden isn't too much.",
+      "[Someone Else's Problem] Don't look back."
+    ]
+  }
+}

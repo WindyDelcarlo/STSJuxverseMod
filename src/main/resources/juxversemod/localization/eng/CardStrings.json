@@ -1,0 +1,331 @@
+{
+  "${modID}:StrikeRianne": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+  "${modID}:DefendRianne": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block."
+  },
+  "${modID}:ReadTheStars": {
+    "NAME": "Read the Stars",
+    "DESCRIPTION": "Scry !${modID}:CM!. NL Draw !M! card. NL ${modID}:Constellation (Increases Scry)",
+    "UPGRADE_DESCRIPTION": "Scry !${modID}:CM!. NL Draw !M! cards. NL ${modID}:Constellation (Increases Scry)"
+  },
+  "${modID}:WallOfFrost": {
+    "NAME": "Wall of Frost",
+    "DESCRIPTION": "Gain !B! Block. Next turn, gain [E].",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. Next turn, gain [E] [E]."
+  },
+  "${modID}:Intercept": {
+    "NAME": "Intercept",
+    "DESCRIPTION": "Deal !D! damage. If the enemy intends to attack, deal !D! damage again."
+  },
+  "${modID}:RayOfFrost": {
+    "NAME": "Ray of Frost",
+    "DESCRIPTION": "Deal !D! damage. NL Scry !M!."
+  },
+  "${modID}:WinterStorm": {
+    "NAME": "Winter Storm",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Weak to ALL enemies."
+  },
+  "${modID}:Soulseeking": {
+    "NAME": "Soulseeking",
+    "DESCRIPTION": "Deal !D! damage. NL Draw !M! cards. NL Discard 1 card."
+  },
+  "${modID}:FrostShards": {
+    "NAME": "Frost Shards",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Exhaust a card from your hand."
+  },
+  "${modID}:Starbolt": {
+    "NAME": "Starbolt",
+    "DESCRIPTION": "Deal !${modID}:CD! damage. NL ${modID}:Constellation (Increases Damage)"
+  },
+  "${modID}:EMPulse": {
+    "NAME": "EM Pulse",
+    "DESCRIPTION": "Deal !${modID}:CD! damage to ALL enemies. NL Gain !${modID}:CB!★ Block. NL ${modID}:Constellation (Increases Damage and Block)",
+    "UPGRADE_DESCRIPTION": "Deal !${modID}:CD! damage to ALL enemies. NL Gain !${modID}:CB!★ Block. NL Gain 1 permanent Star. NL ${modID}:Constellation (Increases Damage and Block)"
+  },
+  "${modID}:HarshLight": {
+    "NAME": "Harsh Light",
+    "DESCRIPTION": "Deal !${modID}:CD! damage. NL Apply !${modID}:CM!★ Weak. NL ${modID}:Constellation (Increases Damage and Weak)"
+  },
+  "${modID}:OpenReactor": {
+    "NAME": "Open Reactor",
+    "DESCRIPTION": "Deal !D! damage. If this kills an enemy, gain [E] [E]."
+  },
+  "${modID}:SpikedIceShell": {
+    "NAME": "Spiked Ice Shell",
+    "DESCRIPTION": "Gain !B! Block. NL Deal !D! damage. NL Put a card from your hand on top of your draw pile. NL You gain [E] next turn."
+  },
+  "${modID}:HyperspaceStrike": {
+    "NAME": "Hyperspace Strike",
+    "DESCRIPTION": "Deal !D! damage. NL If you have played no other cards this turn, deal !${modID}:D2! damage."
+  },
+  "${modID}:AuroraVeil": {
+    "NAME": "Aurora Veil",
+    "DESCRIPTION": "Gain !B! Block. NL Draw !M! card next turn.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Draw !M! cards next turn."
+  },
+  "${modID}:Counterspell": {
+    "NAME": "Counterspell",
+    "DESCRIPTION": "Remove !M! debuff from you. NL Draw 2 cards.",
+    "UPGRADE_DESCRIPTION": "Remove !M! debuffs from you. NL Draw two cards."
+  },
+  "${modID}:SearchTheSky": {
+    "NAME": "Search the Sky",
+    "DESCRIPTION": "Draw !M! card. NL Discard !M! card. NL Gain !M! temporary ${modID}:Star.",
+    "UPGRADE_DESCRIPTION": "Draw !M! cards. NL Discard !M! cards. NL Gain !M! temporary ${modID}:Stars."
+  },
+  "${modID}:HistoricAchievement": {
+    "NAME": "Historic Achievement",
+    "DESCRIPTION": "Put a card from your discard pile into your hand. Retain it. NL Gain [E] [E] next turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Put !M! cards from your discard pile into your hand. Retain them. NL Gain [E] [E] next turn. NL Exhaust."
+  },
+  "${modID}:PilotTraining": {
+    "NAME": "Pilot Training",
+    "DESCRIPTION": "Gain !M! Dexterity. NL Gain !B! Block. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Dexterity. NL Gain !B! Block."
+  },
+  "${modID}:ThoroughStudy": {
+    "NAME": "Thorough Study",
+    "DESCRIPTION": "Exhaust a card from your discard pile and from your hand. Draw !M! cards."
+  },
+  "${modID}:Offload": {
+    "NAME": "Offload",
+    "DESCRIPTION": "Gain !B! Block. NL Exhaust a card from your hand. If it cost 2 or more, add [E].",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Exhaust a card from your hand. If it cost 2 or more, add [E] [E]."
+  },
+  "${modID}:StructuralEngineering":{
+    "NAME": "Structural Engineering",
+    "DESCRIPTION": "Whenever a card is Exhausted, deal !M! damage to ALL enemies and gain 1 permanent ${modID}:Star."
+},
+  "${modID}:AstralSurvey": {
+    "NAME": "Astral Survey",
+    "DESCRIPTION": "Whenever a card is Exhausted this turn, gain !M! temporary ${modID}:Star. NL Exhaust."
+  },
+  "${modID}:WintersMidnight": {
+    "NAME": "Winter's Midnight",
+    "DESCRIPTION": "Exhaust any number of cards from your hand. NL Deal !D! damage for each card in your exhaust pile. NL Exhaust."
+  },
+  "${modID}:SpacetimeRipples": {
+    "NAME": "Spacetime Ripples",
+    "DESCRIPTION": "Deal !D! damage !${modID}:CM! times. NL ${modID}:Constellation (Increases attacks)"
+  },
+  "${modID}:StarShower": {
+    "NAME": "Star Shower",
+    "DESCRIPTION": "Deal !D! damage to random enemies !${modID}:CM! times. NL ${modID}:Constellation (Increases attacks)"
+  },
+  "${modID}:Timebomb": {
+    "NAME": "Timebomb",
+    "DESCRIPTION": "Deal !D! damage !M! times. NL At the start of your turn, return this from the discard pile to your hand."
+  },
+  "${modID}:Infohazard": {
+    "NAME": "Infohazard",
+    "DESCRIPTION": "Exhaust a card from your hand. NL Deal !D! damage X times. X is the Exhausted card's cost."
+  },
+  "${modID}:QuantumBreakdown": {
+    "NAME": "Quantum Breakdown",
+    "DESCRIPTION": "Deal !D! damage. NL Draw a card. NL When this is Exhausted, play it."
+  },
+  "${modID}:EnergyGradient": {
+    "NAME": "Energy Gradient",
+    "DESCRIPTION": "Scry !M! NL When this is Exhausted, apply !${modID}:M2! Weak to ALL enemies. ALL enemies lose !${modID}:M2! Strength."
+  },
+  "${modID}:SupergiantCharge": {
+    "NAME": "Supergiant Charge",
+    "DESCRIPTION": "Deal !D! damage. NL When you play a card with cost 4+, return this card from your discard pile to your hand."
+  },
+  "${modID}:FrigidAtmosphere": {
+    "NAME": "Frigid Atmosphere",
+    "DESCRIPTION": "If the enemy intents to attack, enemy loses !M! Strength and you gain !M! Strength. NL Deal !D! damage."
+  },
+  "${modID}:TimeStep": {
+    "NAME": "Time Step",
+    "DESCRIPTION": "Gain !B! Block. NL Your energy is conserved this turn. Retain your hand. NL End the turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Your energy is conserved this turn. Retain your hand. NL End the turn."
+  },
+  "$modID}:VacuumEnergy": {
+    "NAME": "Vacuum Energy",
+    "DESCRIPTION": "Gain !M! [E]. Add a Dazed to the top of your draw pile. NL At the start of your next turn, gain !M! [E]."
+  },
+  "${modID}:LoseFocus": {
+    "NAME": "Lose Focus",
+    "DESCRIPTION": "Gain !B! Block. NL Shuffle !M! Dazed into your draw pile. NL Exhaust."
+  },
+  "${modID}:CosmicBeam": {
+    "NAME": "Cosmic Beam",
+    "DESCRIPTION": "Deal !D! damage. NL Draw !M! card. Discard !M! card. NL If you have played no other cards this turn, gain [E] [E].",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Draw !M! cards. Discard !M! cards. NL If you have played no other cards this turn, gain [E] [E]."
+  },
+  "${modID}:HarmonicReplica": {
+    "NAME": "Harmonic Replica",
+    "DESCRIPTION": "Choose a card in your discard pile. Add a copy of that card into your hand. NL Exhaust."
+  },
+  "${modID}:FlickerEngineering": {
+    "NAME": "Flicker Engineering",
+    "DESCRIPTION": "The next power you play this turn is played twice."
+  },
+  "${modID}:GravitationalWave": {
+    "NAME": "Gravitational Wave",
+    "DESCRIPTION": "ALL enemies lose !M! Strength. NL Apply !M! Vulnerable to ALL enemies. NL Exhaust."
+  },
+  "${modID}:AstralTies": {
+    "NAME": "Astral Ties",
+    "DESCRIPTION": "Heal !${modID}:CM! HP. NL Exhaust. NL ${modID}:Constellation (Increases Healing)"
+  },
+  "${modID}:ReachThroughAges": {
+    "NAME": "Reach Through Ages",
+    "DESCRIPTION": "Retain. NL Draw 1 card. NL Put a card from your discard pile on top of your deck.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Draw 1 card. NL Put a card from your discard pile on top of your deck. NL Draw 1 card. Discard 1 card."
+  },
+  "${modID}:LibraryResearch": {
+    "NAME": "Library Research",
+    "DESCRIPTION": "Choose 1 of 3 cards of any color to add into your hand. It gains Exhaust. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Choose 1 of 3 cards of any color to add into your hand. It gains Exhaust."
+  },
+  "${modID}:BathedInStarlight": {
+    "NAME": "Bathed in Starlight",
+    "DESCRIPTION": "Gain !${modID}:CB! Block. NL Gain 1 permanent ${modID}:Star. NL ${modID}:Constellation (Increases Block)"
+  },
+  "${modID}:StarlightArmor": {
+    "NAME": "Starlight Armor",
+    "DESCRIPTION": "At end of turn, gain !${modID}:CB! Block. NL ${modID}:Constellation (Increases Block.)",
+    "UPGRADE_DESCRIPTION": "At end of turn, gain !${modID}:CB! Block. NL ${modID}:Constellation (Increases Block Twice.)"
+  },
+  "${modID}:Hyperfocus": {
+    "NAME": "Hyperfocus",
+    "DESCRIPTION": "When you play a card, lose !M! HP and gain [E]."
+  },
+  "${modID}:Overstimulation": {
+    "NAME": "Overstimulation",
+    "DESCRIPTION": "At the start of your turn, draw 1 fewer card and gain [E] [E]."
+  },
+  "${modID}:ProtectionField": {
+    "NAME": "Protection Field",
+    "DESCRIPTION": "Gain !B! Block. NL If you have played no other cards this turn, gain [E] [E].",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL If you have played no other cards this turn, gain [E] [E] [E]."
+  },
+  "${modID}:ToughItOut": {
+    "NAME": "Tough It Out",
+    "DESCRIPTION": "Whenever you lose HP, gain [E] next turn.",
+    "UPGRADE_DESCRIPTION": "Whenever you lose HP, gain [E] next turn. NL Innate."
+  },
+  "${modID}:StellarFusion": {
+    "NAME": "Stellar Fusion",
+    "DESCRIPTION": "Gain !${modID}:CM! [E] next turn. NL Retain !M! cards. NL End the turn. NL ${modID}:Constellation (Increases Energy)",
+    "UPGRADE_DESCRIPTION": "Gain !${modID}:CM! [E] next turn. NL Retain !M! cards. NL End the turn. NL ${modID}:Constellation (Increases Energy)"
+  },
+  "${modID}:NullGeodesic": {
+    "NAME": "Null Geodesic",
+    "DESCRIPTION": "At the start of your turn, draw !M! cards, then exhaust 1 card."
+  },
+  "${modID}:SubspaceRadiation": {
+    "NAME": "Subspace Radiation",
+    "DESCRIPTION": "Deal !D! damage. If you have 3 or more Exhausted cards, deal !D! damage."
+  },
+  "${modID}:ADarkNight": {
+    "NAME": "A Dark Night",
+    "DESCRIPTION": "Remove all ${modID}:Stars. Draw that many cards next turn. If !M! or more ${modID}:Stars were removed, deal 30 damage to ALL enemies."
+  },
+  "${modID}:MemoriesOfPastSelves": {
+    "NAME": "Memories of Past Selves",
+    "DESCRIPTION": "Draw !M! cards. NL Gain [E] [E]. NL Gain !B! Block. NL Reduce this card's cost by 1 this combat.",
+    "UPGRADE_DESCRIPTION": "Draw !M! cards. NL Gain [E] [E] [E]. NL Gain !B! Block. NL Reduce this card's cost by 1 this combat."
+  },
+  "${modID}:GravitationalSingularity": {
+    "NAME": "Gravitational Singularity",
+    "DESCRIPTION": "Deal !D! damage. NL Put this card on top of your draw pile. NL At the start of your next turn, gain [E] [E]."
+  },
+  "${modID}:CoreRepair": {
+    "NAME": "Core Repair",
+    "DESCRIPTION": "Gain !B! Block and !M! Artifact."
+  },
+  "${modID}:HyperspaceArray": {
+    "NAME": "Hyperspace Array",
+    "DESCRIPTION": "At the end of your turn, Scry !M!. NL At the start of your turn, gain [E]."
+  },
+  "${modID}:Chronolog": {
+    "NAME": "Chronolog",
+    "DESCRIPTION": "Put a card from your exhaust pile into your hand. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Put a card from your exhaust pile into your hand. NL Scry !M!. NL Exhaust."
+  },
+  "${modID}:ParallelTimelines": {
+    "NAME": "Parallel Timelines",
+    "DESCRIPTION": "This turn, your next card is played twice."
+  },
+  "${modID}:QuantumSuppression": {
+    "NAME": "Quantum Suppression",
+    "DESCRIPTION": "Whenever a card is Exhausted, gain [E].",
+    "UPGRADE_DESCRIPTION": "Whenever a card is Exhausted, gain [E] [E]."
+  },
+  "${modID}:UnwindTheSprings": {
+    "NAME": "Unwind the Springs",
+    "DESCRIPTION": "Ethereal. NL Gain 1 Intangible. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Ethereal. NL Gain 1 Intangible."
+  },
+  "${modID}:StellarManifestation": {
+    "NAME": "Stellar Manifestation",
+    "DESCRIPTION": "Put !${modID}:CM! cards with ${modID}:Constellation from your draw pile into your hand. NL Exhaust. NL Constellation (Increases Cards)"
+  },
+  "${modID}:AstralForm": {
+    "NAME": "Astral Form",
+    "DESCRIPTION": "At the start of your turn, gain !${modID}:CM! ${modID}:Stars and !${modID}:CM! Block. NL ${modID}:Constellation (Increases Stars and Block)",
+    "UPGRADE_DESCRIPTION": "Gain 1 permanent ${modID}:Star. NL At the start of your turn, gain !${modID}:CM! permanent ${modID}:Stars and !${modID}:CM! Block. NL ${modID}:Constellation (Increases Stars and Block)"
+  },
+  "${modID}:EyerginSoda": {
+    "NAME":"Eyergin Soda",
+    "DESCRIPTION": "Energy is conserved between turns.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Energy is conserved between turns."
+  },
+  "${modID}:Supernova": {
+    "NAME": "Supernova",
+    "DESCRIPTION": "Deal !${modID}:CD! damage to ALL enemies. NL Apply !M! Weak to ALL enemies. NL Exhaust. NL ${modID}:Constellation (Increases Damage twice.)",
+    "UPGRADE_DESCRIPTION": "Deal !${modID}:CD! damage to ALL enemies. NL Apply !M! Weak to ALL enemies. NL Exhaust. NL ${modID}:Constellation (Increases Damage 3 times.)"
+  },
+  "${modID}:PromisedGate": {
+    "NAME": "Promised Gate",
+    "DESCRIPTION": "This turn, ALL cards you play are played twice. NL Gain [E] [E] [E]. NL Exhaust."
+  },
+  "${modID}:GammaRayBurst":{
+    "NAME": "Gamma Ray Burst",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !${modID}:CM! Weak and !${modID}:CM! Vulnerable. NL Exhaust. NL ${modID}:Constellation (Increases Debuffs)"
+  },
+  "${modID}:Imaginaria": {
+    "NAME": "Imaginaria",
+    "DESCRIPTION": "Play ALL cards in your draw pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Shuffle your discard pile into your draw pile. NL Play ALL cards in your draw pile. NL Exhaust."
+  },
+  "${modID}:SuperluminalJourney": {
+    "NAME": "Superluminal Journey",
+    "DESCRIPTION": "Shuffle your exhaust pile into your draw pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Shuffle any number of cards from your exhaust pile into your draw pile. NL Exhaust."
+  },
+  "${modID}:TemporalSingularity": {
+    "NAME": "Temporal Singularity",
+    "DESCRIPTION": "At the start of your turn, take an extra turn after this one if this isn't an extra turn."
+  },
+  "${modID}:CelestialRecord": {
+    "NAME": "Celestial Record",
+    "DESCRIPTION": "Draw 1 card. NL Gain !M! temporary ${modID}:Star.",
+    "UPGRADED_DESCRIPTION": "Draw 1 card. NL Gain !M! temporary ${modID}:Stars."
+  },
+  "${modID}:Zenith": {
+    "NAME": "Zenith",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! temporary ${modID}:Stars."
+  },
+  "${modID}:Nebula": {
+    "NAME": "Nebula",
+    "DESCRIPTION": "This turn, gain twice as many ${modID}:Stars.",
+    "UPGRADE_DESCRIPTION": "This turn, gain three times as many ${modID}:Stars."
+  },
+  "${modID}:StellarAlignment": {
+    "NAME": "Stellar Alignment",
+    "DESCRIPTION": "Whenever you gain a buff, deal !M! to ALL enemies."
+  },
+  "${modID}:VacuumEnergy": {
+    "NAME": "Vacuum Energy",
+    "DESCRIPTION": "Gain [E] [E]. NL Put a Daze on top of your draw pile. NL At the start of your next turn, gain [E] [E].",
+    "UPGRADE_DESCRIPTION": "Gain [E] [E] [E]. NL Put a Daze on top of your draw pile. NL At the start of your next turn, gain [E] [E] [E]."
+  }
+}

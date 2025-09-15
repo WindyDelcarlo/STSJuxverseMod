@@ -1,0 +1,195 @@
+{
+  "${modID}:FlowPower": {
+    "NAME": "Reading The Flow Compass",
+    "DESCRIPTIONS": [
+      "Copy the next skill you play."
+    ]
+  },
+  "${modID}:FlickerEngineeringPower": {
+    "NAME": "Flicker Engineering",
+    "DESCRIPTIONS": [
+      "Copy the next power you play."
+    ]
+  },
+  "${modID}:DestinyPower": {
+    "NAME": "Fateweave",
+    "DESCRIPTIONS": [
+      "At the start of your turn, #yScry #b",
+      "."
+      ]
+  },
+  "${modID}:ShadowrendPower": {
+    "NAME": "Shadowrend",
+    "DESCRIPTIONS": [
+      "When you deal unblocked damage, gain #b1",
+      " temporary #yStrength."
+    ]
+  },
+  "${modID}:PeacePower": {
+    "NAME": "Peace Branch",
+    "DESCRIPTIONS": [
+      "Prevent the next time you would lose HP.",
+      "Prevent the next #b",
+      " times you would lose HP."
+    ]
+  },
+  "${modID}:StarPower": {
+    "NAME": "Stars",
+    "DESCRIPTIONS": [
+      "Increasing the effect of Constellation cards by ",
+      "."
+    ]
+  },
+  "${modID}:StarlessPower": {
+    "NAME": "Lose Stars",
+    "DESCRIPTIONS": [
+      " Star will go away at the end of turn."
+    ]
+  },
+  "${modID}:StructuralEngineeringPower": {
+      "NAME": "Structural Engineering",
+      "DESCRIPTIONS": [
+        "Whenever a card is Exhausted, deal #b",
+        " damage to ALL enemies and gain 1 #y${modID}:Star."
+      ]
+    },
+  "${modID}:AstralSurveyPower": {
+      "NAME": "Astral Survey",
+      "DESCRIPTIONS": [
+        "Whenever a card is Exhausted this turn, gain #b",
+        " #y${modID}:Star."
+      ]
+    },
+  "${modID}:TimeStepPower": {
+      "NAME": "Time Step",
+      "DESCRIPTIONS": [
+        "Your energy is conserved this turn. Retain your hand."
+      ]
+    },
+  "${modID}:CancelPower": {
+      "NAME": "Cancel Power",
+      "DESCRIPTIONS": [
+        "Preventing Infinite Loops"
+      ]
+    },
+  "${modID}:NebulaPower": {
+      "NAME": "Nebula",
+      "DESCRIPTIONS": [
+        "When you gain #y${modID}:Stars, gain #b",
+        " additional #y${modID}:Stars."
+      ]
+    },
+  "${modID}:NebulaStarPower": {
+      "NAME": "Stars",
+      "DESCRIPTIONS": [
+        "Increasing the effect of Constellation cards by ",
+        ". Originated from Nebula."
+      ]
+    },
+  "${modID}:NebulaStarlessPower": {
+      "NAME": "Lose Stars",
+      "DESCRIPTIONS": [
+        " Stars go away at the end of turn. Originated from Nebula."
+      ]
+  },
+  "${modID}:StarlightArmorPower": {
+    "NAME": "Starlight Armor",
+    "DESCRIPTIONS": [
+      "At end of turn, gain #b1 Block. (Increased by Stars)"
+    ]
+  },
+  "${modID}:UpgradedStarlightArmorPower": {
+    "NAME": "Upgraded Starlight Armor",
+    "DESCRIPTIONS": [
+      "At end of turn, gain #b1 Block. (Increased by Stars twice)"
+    ]
+  },
+  "${modID}:HyperfocusPower": {
+    "NAME": "Hyperfocus",
+    "DESCRIPTIONS": [
+      "When you play a card, lose #b",
+      " HP and get #b",
+      " [E] ."
+    ]
+  },
+  "${modID}:UpgradedHyperfocusPower": {
+    "NAME": "Hyperfocus",
+    "DESCRIPTIONS": [
+      "When you play a card, lose #b",
+      " HP and get #b",
+      " [E] ."
+    ]
+  },
+  "${modID}:OverstimulationPower": {
+    "NAME": "Overstimulation",
+    "DESCRIPTIONS": [
+      "At the start of your turn, draw 1 fewer card and gain [E] [E] ."
+    ]
+  },
+  "${modID}:StellarAlignmentPower": {
+    "NAME": "Stellar Alignment",
+    "DESCRIPTIONS": [
+      "Whenever you gain a buff, deal #b",
+      " damage to ALL enemies."
+    ]
+  },
+  "${modID}:ToughItOutPower": {
+    "NAME": "Tough It Out",
+    "DESCRIPTIONS": ["Whenever you lose HP, gain [E] next turn."]
+  },
+  "${modID}:NullGeodesicPower": {
+    "NAME": "Null Geodesic",
+    "DESCRIPTIONS": ["At the start of your turn, draw ",
+    " additional cards, then exhaust ",
+    " cards from your hand."]
+  },
+  "${modID}:UpgradedNullGeodesicPower": {
+    "NAME": "Null Geodesic",
+    "DESCRIPTIONS": ["At the start of your turn, draw ",
+      " additional cards, then exhaust ",
+      " cards from your hand."]
+  },
+  "${modID}:HyperspaceArrayPower": {
+    "NAME": "Hyperspace Array",
+    "DESCRIPTIONS": ["At the end of your turn, #yScry #b3 ",
+      " times. At start of turn, gain [E]."]
+  },
+  "${modID}:UpgradedHyperspaceArrayPower": {
+    "NAME": "Hyperspace Array",
+    "DESCRIPTIONS": ["At the end of your turn, #yScry #b5 ",
+      " times. At start of turn, gain [E] ."]
+  },
+  "${modID}:ParallelPower": {
+    "NAME": "Parallel Timelines",
+    "DESCRIPTIONS": ["This turn, your next card is played twice."]
+  },
+  "${modID}:SuppressionPower": {
+    "NAME": "Quantum Suppression",
+    "DESCRIPTIONS": ["Whenever a card is #yExhausted, gain ",
+      " [E] ."]
+  },
+  "${modID}:AstralFormPower": {
+    "NAME": "Astral Form",
+    "DESCRIPTIONS": ["At the start of your turn, gain #b1 #yStar and #b1 #yBlock. (Increased by Stars)"]
+  },
+  "${modID}:EyerginSodaPower": {
+    "NAME": "Eyergin Soda",
+    "DESCRIPTIONS": ["Energy is conserved between turns."]
+  },
+  "${modID}:PromisedGatePower": {
+    "NAME": "Promised Gate",
+    "DESCRIPTIONS": ["This turn, ALL cards you play are played twice."]
+  },
+  "${modID}:TemporalSingularityPower": {
+    "NAME": "Temporal Singularity",
+    "DESCRIPTIONS": ["At the start of your turn, take an extra turn after this one."]
+  },
+  "${modID}:ExtraTurnPower": {
+    "NAME": "Extra Turn",
+    "DESCRIPTIONS": ["Please hold as your Singularity recharges."]
+  },
+  "${modID}:TimebombPower": {
+    "NAME": "Timebomb",
+    "DESCRIPTIONS": ["If the timebomb is still in your discard pile at start if turn, put it back in your hand."]
+  }
+}

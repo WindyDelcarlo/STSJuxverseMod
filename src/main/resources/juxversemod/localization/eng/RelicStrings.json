@@ -1,0 +1,50 @@
+{
+  "${modID}:Eitheiruiung": {
+    "NAME": "Eitheiruiung",
+    "FLAVOR": "The \"Staff of Balance\", formed to channel an endless amount of magic from the Tree of Life.",
+    "DESCRIPTIONS": [
+      "Gain [E] [E] at the start of your turn. When you play #b4 or more cards in a turn, you lose #b",
+      " HP."
+    ]
+  },
+  "${modID}:FlowCompass": {
+    "NAME": "Flow Compass",
+    "FLAVOR": "A glass sphere and a black needle move in 3D space, tracing out the harmonics of magic.",
+    "DESCRIPTIONS": [
+      "When you play #b",
+      " #ySkills, copy the next #ySkill you play."
+    ]
+  },
+  "${modID}:TomeOfTheUnknowable": {
+    "NAME": "Tome of the Unknowable",
+    "FLAVOR": "A nondescript book that holds the secrets of the world and wishes to share.",
+    "DESCRIPTIONS": [
+      "At the start of combat, add two random cards to your hand."
+    ]
+  },
+  "${modID}:KeyOfDestinies": {
+    "NAME": "Key of Destinies",
+    "FLAVOR": "A wrought-iron key that controls destiny.",
+    "DESCRIPTIONS": [
+      "At the start of your turn, #yScry ",
+      "."
+    ]
+  },
+  "${modID}:Shadowrend": {
+    "NAME": "Shadowrend",
+    "FLAVOR": "A blade that devours even the soul of its wielder.",
+    "DESCRIPTIONS": ["When you deal unblocked damage, gain #b1 temporary #yStrength."]
+  },
+  "${modID}:PeaceBranch": {
+    "NAME": "Peace Branch",
+    "FLAVOR": "A stick formed from the resolution of a great conflict.",
+    "DESCRIPTIONS": ["When an enemy dies, prevent the next time you would lose HP this combat."]
+  },
+  "${modID}:BandOfStableTime": {
+    "NAME": "Band of Stable Time",
+    "FLAVOR": "A platinum bracelet that prevents timelines from splitting in its vicinity.",
+    "DESCRIPTIONS": [
+      "You get #b1 #y${modID}:Constellation at the start of combat. When you are dealt damage, get #b1 #yBlock for each #y${modID}:Constellation you have."
+    ]
+  }
+}
