@@ -1,12 +1,17 @@
 package juxversemod.cards;
 
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.ArtifactPower;
 import juxversemod.characters.CharRianne;
 import juxversemod.util.CardStats;
+
+import java.util.ArrayList;
 
 public class CoreRepair extends BaseCard {
     public static final String ID = makeID("CoreRepair");
@@ -31,6 +36,26 @@ public class CoreRepair extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m){
         addToBot(new GainBlockAction(p,block));
-        addToBot(new ApplyPowerAction(p,p,new ArtifactPower(p,magicNumber)));
+        addToBot(new AbstractGameAction(){
+            public void update() {
+                for (int i = 0; i < magicNumber; i++) {
+                    ArrayList<AbstractPower> playerDebuffs = new ArrayList<AbstractPower>();
+                    if (!p.powers.isEmpty()) {
+                        for (AbstractPower power : AbstractDungeon.player.powers) {
+                            if (power.type.equals(AbstractPower.PowerType.DEBUFF)) {
+                                playerDebuffs.add(power);
+                            }
+                        }
+                        System.out.println(playerDebuffs.size());
+                        if (!playerDebuffs.isEmpty()) {
+                            AbstractPower powerToRemove = playerDebuffs.get(AbstractDungeon.cardRandomRng.random(playerDebuffs.size() - 1));
+                            AbstractDungeon.player.powers.remove(powerToRemove);
+                        }
+                    }
+                }
+
+                this.isDone = true;
+            }
+        });
     }
 }

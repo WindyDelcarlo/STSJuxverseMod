@@ -23,8 +23,7 @@
   },
   "${modID}:RayOfFrost": {
     "NAME": "Ray of Frost",
-    "DESCRIPTION": "Deal !D! damage. NL If the enemy intends to attack, Stun it. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the enemy intends to attack, Stun it."
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy intends to attack, Stun it. NL Exhaust."
   },
   "${modID}:WinterStorm": {
     "NAME": "Winter Storm",
@@ -190,8 +189,7 @@
   },
   "${modID}:StarlightArmor": {
     "NAME": "Starlight Armor",
-    "DESCRIPTION": "At end of turn, gain !${modID}:CB! Block. NL ${modID}:Constellation (Increases Block.)",
-    "UPGRADE_DESCRIPTION": "At end of turn, gain !${modID}:CB! Block. NL ${modID}:Constellation (Increases Block Twice.)"
+    "DESCRIPTION": "At end of turn, gain !${modID}:CB! Block. NL ${modID}:Constellation (Increases Block.)"
   },
   "${modID}:Hyperfocus": {
     "NAME": "Hyperfocus",

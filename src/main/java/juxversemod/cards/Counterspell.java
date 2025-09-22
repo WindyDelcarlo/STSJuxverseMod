@@ -18,6 +18,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.ArtifactPower;
 import com.megacrit.cardcrawl.powers.DrawCardNextTurnPower;
 import juxversemod.characters.CharRianne;
 import juxversemod.util.CardStats;
@@ -51,27 +52,7 @@ public static final int UPG_BUFF_REMOVED = 1;
                 .setScale(2)
                 .playSoundAt(0.3f,"HEAL_2")
                 .build()));
-        addToBot(new AbstractGameAction(){
-                public void update() {
-                    for (int i = 0; i < magicNumber; i++) {
-                        ArrayList<AbstractPower> playerDebuffs = new ArrayList<AbstractPower>();
-                        if (!p.powers.isEmpty()) {
-                            for (AbstractPower power : AbstractDungeon.player.powers) {
-                                if (power.type.equals(AbstractPower.PowerType.DEBUFF)) {
-                                    playerDebuffs.add(power);
-                                }
-                            }
-                            System.out.println(playerDebuffs.size());
-                            if (!playerDebuffs.isEmpty()) {
-                                AbstractPower powerToRemove = playerDebuffs.get(AbstractDungeon.cardRandomRng.random(playerDebuffs.size() - 1));
-                                AbstractDungeon.player.powers.remove(powerToRemove);
-                            }
-                        }
-                    }
-
-                    this.isDone = true;
-                }
-            });
+        addToBot(new ApplyPowerAction(p,p, new ArtifactPower(p,magicNumber)));
         addToBot(new DrawCardAction(2));
     }
 

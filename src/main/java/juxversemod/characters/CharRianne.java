@@ -170,8 +170,6 @@ public class CharRianne extends CustomPlayer {
         retVal.add(DefendRianne.ID);
         retVal.add(DefendRianne.ID);
         retVal.add(DefendRianne.ID);
-        retVal.add(DefendRianne.ID);
-        retVal.add(DefendRianne.ID);
         retVal.add(ReadTheStars.ID);
         retVal.add(WallOfFrost.ID);
 
@@ -272,7 +270,7 @@ public class CharRianne extends CustomPlayer {
     public List<CutscenePanel> getCutscenePanels() {
         ArrayList<CutscenePanel> panels = new ArrayList<>();
 
-        panels.add(new CutscenePanel(characterPath("ending/rianne1.png"), "ORB_FROST_CHANNEL"));
+        panels.add(new CutscenePanel(characterPath("ending/rianne1.png"), "STARFALL2"));
         panels.add(new CutscenePanel(characterPath("ending/rianne2.png")));
         panels.add(new CutscenePanel(characterPath("ending/rianne3.png")));
         return panels;

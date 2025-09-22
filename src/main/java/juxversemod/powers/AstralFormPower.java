@@ -22,7 +22,7 @@ public class AstralFormPower extends BasePower {
     }
 
     @Override
-    public void atStartOfTurn() {
+    public void atStartOfTurnPostDraw() {
         int stars = CharRianne.checkConstellation(amount)/2;
         addToBot(new ApplyPowerAction(owner,owner,new StarPower(owner,stars)));
     }

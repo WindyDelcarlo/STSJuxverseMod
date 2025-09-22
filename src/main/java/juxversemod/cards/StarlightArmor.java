@@ -19,24 +19,22 @@ public class StarlightArmor extends BaseCard {
             CardTarget.SELF,
             1
     );
-    private static final int BLOCK = 1;
+
+    private static final int STACKS = 1;
+    private static final int UPG_STACKS = 2;
 
     public StarlightArmor(){
         super(ID,info);
 
-        setCustomVar("CB",VariableType.BLOCK,BLOCK,(card,m,base)-> CharRianne.checkConstellation(base));
+        setCustomVar("CB",VariableType.BLOCK,STACKS,UPG_STACKS,(card,m,base)-> CharRianne.checkConstellation(base));
+        setMagic(STACKS,UPG_STACKS);
 
         tags.add(JuxverseMod.CONSTELLATION);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m){
-        if (upgraded){
-            addToBot(new ApplyPowerAction(p,p,new UpgradedStarlightArmorPower(p,1)));
-        }
-        else {
-            addToBot(new ApplyPowerAction(p,p,new StarlightArmorPower(p,1)));
-        }
+        addToBot(new ApplyPowerAction(p,p,new StarlightArmorPower(p,magicNumber)));
         addToBot(new ApplyPowerAction(p,p,new StarPower(p,1)));
         addToBot(new ApplyPowerAction(p,p,new StarlessPower(p,1)));
 

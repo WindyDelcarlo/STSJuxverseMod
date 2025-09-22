@@ -23,3 +23,12 @@ As the aurora shines over the brilliant night sky, stories told only to a select
 
 v. 1.0.0. -- 2025-09-21
 - Released with The Astrologist and 16 relics.
+
+v1.0.1 --
+- Astrologist renamed to Starseeker, because Astrologist is too common a word.
+- Starseeker deck reduced to 10 cards by removing 2 defends (because both her special cards defend anyhow). Turns out most people have 10 cards and not 12. (thanks Silent.)
+- Ray of Frost no longer claims that it stops exhausting itself when you upgrade it.
+- Astral Form now triggers after you draw, so your temporary Stars have fallen off before Astral Form counts them.
+- Starlight Armor+ no longer gives you double your stars to block. Instead, it gives 3+Stars to block. 
+- Counterspell now gives Artifact instead of clearing one stack of debuffs. (It makes it harder to get insane numbers of Stars)
+- Core Repair now clears a stack of debuffs rather than giving Artifact. 

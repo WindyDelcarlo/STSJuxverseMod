@@ -1,11 +1,11 @@
 {
   "${modID}:Rianne": {
     "NAMES": [
-      "The Astrologist",
-      "the Astrologist"
+      "The Starmaker",
+      "the Starmaker"
     ],
     "TEXT": [
-      "The Astrologist arrives from beyond space and time to try her hand at handling a problem. NL Collects stars and casts large spells.",
+      "The Starmaker arrives from beyond space and time to try her hand at handling a problem. NL Manifests stars and casts large spells.",
       "NL You reach into your soul for a new star...",
       "Navigating an unlit street, you come across several hooded figures in the midst of some dark ritual. As you approach, they turn to you in eerie unison. The tallest among them bares fanged teeth and extends a long, pale hand towards you. NL ~\"Join~ ~us~ ~sister~,~ ~and~ ~feel~ ~the~ ~warmth~ ~of~ ~the~ ~Spire.\"~"
     ]
