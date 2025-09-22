@@ -41,12 +41,7 @@ public class Supernova extends BaseCard {
         setCustomVar("CD",VariableType.DAMAGE,DAMAGE,UPG_DAMAGE,(card,m,base)->{
             int multiplier = 2;
             if (upgraded) multiplier = 3;
-            AbstractPower constellationCheck = AbstractDungeon.player.getPower(StarPower.POWER_ID);
-            AbstractPower nebulaCheck = AbstractDungeon.player.getPower(NebulaStarPower.POWER_ID);
-            int stars = base;
-            if (constellationCheck != null) stars += multiplier*constellationCheck.amount;
-            if (nebulaCheck != null) stars += multiplier*nebulaCheck.amount;
-            return stars;
+            return CharRianne.checkConstellation(multiplier*base);
         });
         setMagic(WEAK);
         setExhaust(true);

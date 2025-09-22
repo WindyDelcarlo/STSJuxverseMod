@@ -3,6 +3,7 @@ package juxversemod.cards;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -35,6 +36,7 @@ public class FrigidAtmosphere extends BaseCard {
             addToBot(new ApplyPowerAction(m,p,new StrengthPower(m,-magicNumber)));
             addToBot(new ApplyPowerAction(p,p,new StrengthPower(p,magicNumber)));
         }
-        addToBot(new DamageAction(m,new DamageInfo(p,damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.FIRE));
+        addToBot(new DamageAction(m,new DamageInfo(p,damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.NONE));
+        addToBot(new SFXAction("ORB_FROST_EVOKE"));
     }
 }

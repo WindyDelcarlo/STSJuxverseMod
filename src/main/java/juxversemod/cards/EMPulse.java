@@ -27,19 +27,12 @@ public class EMPulse extends BaseCard {
             CardTarget.ALL_ENEMY,
             1
     );
-    private static final int DAMAGE = 3;
-    private static final int BLOCK = 3;
+    private static final int DAMAGE = 2;
+    private static final int BLOCK = 2;
 
     public EMPulse(){
         super(ID,info);
-        setCustomVar("CD",VariableType.DAMAGE,DAMAGE,(card,m,base)-> {
-            AbstractPower constellationCheck = AbstractDungeon.player.getPower(StarPower.POWER_ID);
-            AbstractPower nebulaCheck = AbstractDungeon.player.getPower(NebulaStarPower.POWER_ID);
-            int stars = base;
-            if (constellationCheck != null) stars += constellationCheck.amount;
-            if (nebulaCheck != null) stars += nebulaCheck.amount;
-            return stars;
-        });
+        setCustomVar("CD",VariableType.DAMAGE,DAMAGE,(card,m,base)-> CharRianne.checkConstellation(base));
         setCustomVar("CB",VariableType.BLOCK,BLOCK,(card,m,base)->{
             AbstractPower constellationCheck = AbstractDungeon.player.getPower(StarPower.POWER_ID);
             AbstractPower nebulaCheck = AbstractDungeon.player.getPower(NebulaStarPower.POWER_ID);

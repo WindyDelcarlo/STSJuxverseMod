@@ -33,7 +33,7 @@ public class Counterspell extends BaseCard {
             AbstractCard.CardType.SKILL,
             AbstractCard.CardRarity.COMMON,
             AbstractCard.CardTarget.SELF,
-            2
+            1
     );
 public static final int BUFF_REMOVED = 1;
 public static final int UPG_BUFF_REMOVED = 1;
@@ -62,8 +62,10 @@ public static final int UPG_BUFF_REMOVED = 1;
                                 }
                             }
                             System.out.println(playerDebuffs.size());
-                            AbstractPower powerToRemove = playerDebuffs.get(AbstractDungeon.cardRandomRng.random(playerDebuffs.size()-1));
-                            AbstractDungeon.player.powers.remove(powerToRemove);
+                            if (!playerDebuffs.isEmpty()) {
+                                AbstractPower powerToRemove = playerDebuffs.get(AbstractDungeon.cardRandomRng.random(playerDebuffs.size() - 1));
+                                AbstractDungeon.player.powers.remove(powerToRemove);
+                            }
                         }
                     }
 

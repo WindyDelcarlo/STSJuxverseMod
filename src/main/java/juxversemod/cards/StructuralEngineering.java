@@ -25,6 +25,7 @@ public class StructuralEngineering extends BaseCard {
             AbstractCard.CardTarget.SELF,
             2
     );
+
     public static final int STACKS = 1;
     public static final int UPG_STACKS = 1;
 
@@ -37,6 +38,6 @@ public class StructuralEngineering extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m){
-        addToBot(new ApplyPowerAction(p,p,new StructuralEngineeringPower(p,1,2)));
+        addToBot(new ApplyPowerAction(p,p,new StructuralEngineeringPower(p,1)));
     }
 }

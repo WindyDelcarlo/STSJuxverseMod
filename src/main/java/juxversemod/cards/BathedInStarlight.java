@@ -20,21 +20,14 @@ public class BathedInStarlight extends BaseCard {
             CardType.SKILL,
             CardRarity.UNCOMMON,
             CardTarget.SELF,
-            2
+            1
     );
     private static final int BLOCK = 5;
     private static final int UPG_BLOCK = 3;
 
     public BathedInStarlight(){
         super(ID,info);
-        setCustomVar("CB",VariableType.BLOCK,BLOCK,UPG_BLOCK,(card,m,base)->{
-            AbstractPower constellationCheck = AbstractDungeon.player.getPower(StarPower.POWER_ID);
-            AbstractPower nebulaCheck = AbstractDungeon.player.getPower(NebulaStarPower.POWER_ID);
-            int stars = base;
-            if (constellationCheck != null) stars += constellationCheck.amount;
-            if (nebulaCheck != null) stars += nebulaCheck.amount;
-            return stars;
-        });
+        setCustomVar("CB",VariableType.BLOCK,BLOCK,UPG_BLOCK,(card,m,base)-> CharRianne.checkConstellation(base));
 
         tags.add(JuxverseMod.CONSTELLATION);
     }

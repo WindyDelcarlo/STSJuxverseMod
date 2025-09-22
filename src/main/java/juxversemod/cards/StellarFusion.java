@@ -31,14 +31,7 @@ public class StellarFusion extends BaseCard {
     public StellarFusion() {
         super(ID, info);
         setExhaust(true);
-        setCustomVar("CM",VariableType.MAGIC,ENERGIZE,(card,m,base)->{
-            AbstractPower constellationCheck = AbstractDungeon.player.getPower(StarPower.POWER_ID);
-            AbstractPower nebulaCheck = AbstractDungeon.player.getPower(NebulaStarPower.POWER_ID);
-            int stars = base;
-            if (constellationCheck != null) stars += constellationCheck.amount;
-            if (nebulaCheck != null) stars += nebulaCheck.amount;
-            return stars;
-        });
+        setCustomVar("CM",VariableType.MAGIC,ENERGIZE,(card,m,base)->CharRianne.checkConstellation(base));
         setMagic(RETAIN,UPG_RETAIN);
 
         tags.add(JuxverseMod.CONSTELLATION);

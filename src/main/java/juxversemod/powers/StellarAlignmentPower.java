@@ -23,7 +23,7 @@ public class StellarAlignmentPower extends BasePower {
     @Override
     public void onApplyPower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
         if (power.type.equals(PowerType.BUFF)){
-            addToBot(new DamageAllEnemiesAction((AbstractPlayer) owner,amount, DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+            addToBot(new DamageAllEnemiesAction((AbstractPlayer) owner,DamageInfo.createDamageMatrix(amount,true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.SLASH_VERTICAL));
         }
     }
 

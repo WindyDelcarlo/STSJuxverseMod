@@ -44,7 +44,59 @@
     "NAME": "Band of Stable Time",
     "FLAVOR": "A platinum bracelet that prevents timelines from splitting in its vicinity.",
     "DESCRIPTIONS": [
-      "You get #b1 #y${modID}:Constellation at the start of combat. When you are dealt damage, get #b1 #yBlock for each #y${modID}:Constellation you have."
+      "You get #b1 #y${modID}:Star at the start of combat. When you are dealt damage, get #b1 #yBlock for each #y${modID}:Star you have."
     ]
+  },
+  "${modID}:CheapFlowTorch": {
+    "NAME": "Cheap Flow Torch",
+    "FLAVOR": "\"I know we don't have a lot of money right now, but I want to make sure Caelum can grow up into the engineer he wants to be.\"",
+    "DESCRIPTIONS": [
+      "Once each combat, right-click this to spend #b"," gold and gain [E] ."
+    ]
+  },
+  "${modID}:WoodenFlute": {
+    "NAME": "Wooden Flute",
+    "FLAVOR": "\"I can't do much to help Aria with her hunting skill. However, she seems to like music, so I hope she sticks to it.\"",
+    "DESCRIPTIONS": [
+      "Your first attack each turn deals #b1 damage to ALL enemies for each #y${modID}:Star you have."
+    ]
+  },
+  "${modID}:MeteorHairpin": {
+    "NAME": "Meteor Hairpin",
+    "FLAVOR": "\"Silva is growing up to be more than suited for her noble role. Seeing as the shooting star represents luck, I hope this brings luck to her.\"",
+    "DESCRIPTIONS": [
+      "Whenever a card is #yExhausted, gain #b1 temporary #yStrength."
+    ]
+  },
+  "${modID}:TemporalAnchor": {
+    "NAME": "Temporal Anchor",
+    "FLAVOR": "The activation of the Band of Stable Time locks down its active timeline, preventing (other) time travelers from jumping in unannounced.",
+    "DESCRIPTIONS": ["Replaces #yBand #yof #yStable #yTime. NL You get #b3 #y${modID}:Stars at the start of combat. When you are dealt damage, get #b1 #yBlock for each #y${modID}:Star you have."]
+  },
+  "${modID}:BagOfCarrots": {
+    "NAME": "Bag Of Carrots",
+    "FLAVOR": "Condensed sugar in a crisp orange packet.",
+    "DESCRIPTIONS": ["The first time a card is #yExhausted each turn, gain [E] ."]
+  },
+  "${modID}:CrystalKris": {
+    "NAME": "Crystal Kris",
+    "FLAVOR": "A blade of crystal made to taste only the blood of its creator.",
+    "DESCRIPTIONS": ["Whenever you end a turn with #b",
+      " or more #y${modID}:Stars, gain #b1 #yStrength."]
+  },
+  "${modID}:WorldforgeFragment": {
+    "NAME": "Worldforge Fragment",
+    "FLAVOR": "A machine capable of casting the Allspell, left in pieces so it couldn't be used a second time.",
+    "DESCRIPTIONS": ["At the end of your turn, put a card from your hand on top of your deck."]
+  },
+  "${modID}:TranscriptionTablet": {
+    "NAME": "Transcription Tablet",
+    "FLAVOR": "\"Lexi was born without a voice. I gifted this to her, such that she may be able to write one herself.\"",
+    "DESCRIPTIONS": ["Whenever you play a skill without #y${modID}:Constellation, gain #b1 temporary #y${modID}:Star."]
+  },
+  "${modID}:ModelFighter": {
+    "NAME": "Model Fighter",
+    "FLAVOR": "\"When Arctus left home, he left everything he cared about behind. I hope this model ship finds him well, so he may have something.\"",
+    "DESCRIPTIONS": ["Whenever you play #b5 or more cards in a turn, apply #b2 #yVulnerable to ALL enemies."]
   }
 }

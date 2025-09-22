@@ -1,6 +1,7 @@
 package juxversemod.cards;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.LoseHPAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.IntangiblePlayerPower;
@@ -29,6 +30,7 @@ public class UnwindTheSprings extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m){
+        addToBot(new LoseHPAction(p,p,4));
         addToBot(new ApplyPowerAction(p,p,new IntangiblePlayerPower(p,magicNumber)));
     }
 }

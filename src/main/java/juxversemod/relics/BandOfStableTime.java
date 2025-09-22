@@ -19,7 +19,7 @@ public class BandOfStableTime extends BaseRelic {
 
 
     public BandOfStableTime() {
-        super(ID, NAME, RARITY, SOUND);
+        super(ID, NAME, CharRianne.Meta.CARD_COLOR, RARITY, SOUND);
     }
 
     @Override
@@ -30,7 +30,7 @@ public class BandOfStableTime extends BaseRelic {
     @Override
     public int onAttacked(DamageInfo info, int damageAmount){
         if (info.type != DamageInfo.DamageType.HP_LOSS && damageAmount > 0){
-                    addToTop(new GainBlockAction(AbstractDungeon.player,CharRianne.checkConstellationAmount()));
+                    addToTop(new GainBlockAction(AbstractDungeon.player,CharRianne.checkConstellation()));
         }
         return damageAmount;
     }

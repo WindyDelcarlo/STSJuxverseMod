@@ -4,6 +4,7 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.ExhaustAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.actions.utility.ScryAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -38,6 +39,8 @@ public class HyperspaceStrike extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m){
         addToBot(new VFXAction(new SmallLaserEffect(p.drawX,1120f,m.hb.cX,m.hb.cY)));
+        addToBot(new SFXAction("HYPERSPACE"));
+        addToBot(new SFXAction("STARFALL2"));
         addToBot(new DamageAction(m, new DamageInfo(p,damage,DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.NONE));
         addToBot(new AbstractGameAction(){
             @Override

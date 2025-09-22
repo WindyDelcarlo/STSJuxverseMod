@@ -16,13 +16,13 @@ public class PromisedGate extends BaseCard {
             CardType.SKILL,
             CardRarity.RARE,
             CardTarget.SELF,
-            5
+            6
     );
     private static final int ENERGY = 3;
 
     public PromisedGate(){
         super(ID,info);
-        setCostUpgrade(4);
+        setCostUpgrade(5);
         setExhaust(true);
         setMagic(ENERGY);
     }

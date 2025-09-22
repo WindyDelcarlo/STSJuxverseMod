@@ -20,7 +20,7 @@ public class TemporalSingularity extends BaseCard {
 
     public TemporalSingularity(){
         super(ID,info);
-        setInnate(false,true);
+        setSelfRetain(false,true);
     }
 
     @Override

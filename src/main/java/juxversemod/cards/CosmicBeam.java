@@ -25,14 +25,13 @@ public class CosmicBeam extends BaseCard {
             1
     );
     private static final int DAMAGE = 7;
-    private static final int UPG_DAMAGE = 4;
+    private static final int UPG_DAMAGE = 3;
     private static final int DRAW = 1;
-    private static final int UPG_DRAW = 1;
 
     public CosmicBeam(){
         super(ID,info);
         setDamage(DAMAGE,UPG_DAMAGE);
-        setMagic(DRAW,UPG_DRAW);
+        setMagic(DRAW);
     }
 
     @Override

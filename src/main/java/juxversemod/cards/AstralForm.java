@@ -23,23 +23,16 @@ public class AstralForm extends BaseCard {
 
     public AstralForm(){
         super(ID,info);
-        setCustomVar("CM",VariableType.MAGIC,STARS,(card,m,base)-> {
-            AbstractPower constellationCheck = AbstractDungeon.player.getPower(StarPower.POWER_ID);
-            AbstractPower nebulaCheck = AbstractDungeon.player.getPower(NebulaStarPower.POWER_ID);
-            int stars = base;
-            if (constellationCheck != null) stars += constellationCheck.amount;
-            if (nebulaCheck != null) stars += nebulaCheck.amount;
-            return stars;
-        });
+        setCustomVar("CM",VariableType.MAGIC,STARS,(card,m,base)-> CharRianne.checkConstellation(base));
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m){
-        addToBot(new ApplyPowerAction(p,p,new AstralFormPower(p,1)));
+        addToBot(new ApplyPowerAction(p,p,new AstralFormPower(p,1,upgraded)));
         addToBot(new ApplyPowerAction(p,p,new StarPower(p,1)));
         addToBot(new ApplyPowerAction(p,p,new StarlessPower(p,1)));
         if (upgraded){
-            addToBot(new ApplyPowerAction(p,p,new StarPower(p,1)));
+            addToBot(new ApplyPowerAction(p,p,new StarPower(p,2)));
         }
     }
 }

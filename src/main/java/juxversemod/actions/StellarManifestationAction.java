@@ -1,5 +1,6 @@
 package juxversemod.actions;
 
+import basemod.BaseMod;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
@@ -42,7 +43,7 @@ public class StellarManifestationAction extends AbstractGameAction {
             }
             if (starCards.size() == 1){
                 AbstractCard card = starCards.getTopCard();
-                if (this.p.hand.size() == 10){
+                if (this.p.hand.size() == BaseMod.MAX_HAND_SIZE){
                     this.p.drawPile.moveToDiscardPile(card);
                     this.p.createHandIsFullDialog();
                 }

@@ -22,7 +22,6 @@ public class AstralSurvey extends BaseCard {
 
     public AstralSurvey(){
         super(ID,info);
-        setExhaust(true);
         setMagic(CONSTELLATION,UPG_CONSTELLATION);
 
         tags.add(JuxverseMod.CONSTELLATION);

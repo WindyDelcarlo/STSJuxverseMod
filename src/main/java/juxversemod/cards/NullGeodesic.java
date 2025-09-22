@@ -25,15 +25,11 @@ public class NullGeodesic extends BaseCard {
     public NullGeodesic(){
         super(ID,info);
         setMagic(DRAW,UPG_DRAW);
+        setCostUpgrade(2);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m){
-        if (!upgraded){
             addToBot(new ApplyPowerAction(p,p,new NullGeodesicPower(p,1)));
-        }
-        if (upgraded){
-            addToBot(new ApplyPowerAction(p,p,new UpgradedNullGeodesicPower(p,1)));
-        }
     }
 }

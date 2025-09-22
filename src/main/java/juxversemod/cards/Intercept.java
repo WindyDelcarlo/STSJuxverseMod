@@ -3,6 +3,7 @@ package juxversemod.cards;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -18,27 +19,24 @@ public class Intercept extends BaseCard {
             CardTarget.ENEMY,
             2
     );
-    private static final int DAMAGE = 8;
+    private static final int DAMAGE = 9;
     private static final int UPG_DAMAGE = 3;
 
     public Intercept(){
         super(ID,info);
         setDamage(DAMAGE,UPG_DAMAGE);
+        setBlock(DAMAGE,UPG_DAMAGE);
     }
 
     @Override
-    public void use(AbstractPlayer p, AbstractMonster m){
-        addToBot(new AbstractGameAction(){
-            @Override
-            public void update(){
-                if (m != null && m.getIntentBaseDmg() >= 0) {
-                    addToTop(new DamageAction(m,new DamageInfo(p,damage,DamageInfo.DamageType.NORMAL),AttackEffect.NONE));
-                    addToTop(new VFXAction(CharRianne.getShootingStar(p,m)));
-
-                }
-                this.isDone = true;
-            }
-        });
+    public void use(AbstractPlayer p, AbstractMonster m) {
+        if (m != null && m.getIntentBaseDmg() > 0) {
+            addToBot(new GainBlockAction(p, block));
+        }
+        else {
+        addToBot(new VFXAction(CharRianne.getShootingStar(p, m)));
+        addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.NONE));
+        }
         addToBot(new VFXAction(CharRianne.getShootingStar(p,m)));
         addToBot(new DamageAction(m, new DamageInfo(p,damage,DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.NONE));
     }

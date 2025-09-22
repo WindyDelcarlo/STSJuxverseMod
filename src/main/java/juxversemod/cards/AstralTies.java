@@ -22,20 +22,13 @@ public class AstralTies extends BaseCard {
             CardTarget.SELF,
             1
     );
-    private static final int HEALING = 4;
+    private static final int HEALING = 2;
     private static final int UPG_HEALING = 2;
 
     public AstralTies() {
         super(ID, info);
         setExhaust(true);
-        setCustomVar("CM",VariableType.MAGIC,HEALING,UPG_HEALING,(card,m,base)->{
-            AbstractPower constellationCheck = AbstractDungeon.player.getPower(StarPower.POWER_ID);
-            AbstractPower nebulaCheck = AbstractDungeon.player.getPower(NebulaStarPower.POWER_ID);
-            int stars = base;
-            if (constellationCheck != null) stars += constellationCheck.amount;
-            if (nebulaCheck != null) stars += nebulaCheck.amount;
-            return stars;
-        });
+        setCustomVar("CM",VariableType.MAGIC,HEALING,UPG_HEALING,(card,m,base)-> CharRianne.checkConstellation(base));
 
         tags.add(JuxverseMod.CONSTELLATION);
     }

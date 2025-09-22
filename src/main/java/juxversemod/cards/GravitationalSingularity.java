@@ -25,7 +25,7 @@ public class GravitationalSingularity extends BaseCard {
             4
     );
     private static final int DAMAGE = 15;
-    private static final int UPG_DAMAGE = 20;
+    private static final int UPG_DAMAGE = 7;
     private static final int ENERGY = 2;
 
     public GravitationalSingularity(){

@@ -35,14 +35,7 @@ public class SpacetimeRipples extends BaseCard {
     public SpacetimeRipples(){
         super(ID,info);
         setDamage(DAMAGE);
-        setCustomVar("CM",VariableType.MAGIC,ATTACKS,UPG_ATTACKS,(card,m,base)->{
-            AbstractPower constellationCheck = AbstractDungeon.player.getPower(StarPower.POWER_ID);
-            AbstractPower nebulaCheck = AbstractDungeon.player.getPower(NebulaStarPower.POWER_ID);
-            int stars = base;
-            if (constellationCheck != null) stars += constellationCheck.amount;
-            if (nebulaCheck != null) stars += nebulaCheck.amount;
-            return stars;
-        });
+        setCustomVar("CM",VariableType.MAGIC,ATTACKS,UPG_ATTACKS,(card,m,base)->CharRianne.checkConstellation(base));
 
         tags.add(JuxverseMod.CONSTELLATION);
     }

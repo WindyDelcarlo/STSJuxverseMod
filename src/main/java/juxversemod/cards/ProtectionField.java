@@ -23,12 +23,13 @@ public class ProtectionField extends BaseCard {
             1
     );
     private static final int BLOCK = 5;
+    private static final int UPG_BLOCK = 3;
     private static final int ENERGY = 2;
     private static final int UPG_ENERGY = 1;
 
     public ProtectionField(){
         super(ID,info);
-        setBlock(BLOCK);
+        setBlock(BLOCK,UPG_BLOCK);
         setMagic(ENERGY,UPG_ENERGY);
     }
 

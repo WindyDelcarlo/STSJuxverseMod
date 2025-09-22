@@ -29,14 +29,7 @@ public class StellarManifestation extends BaseCard {
         super(ID,info);
         setCostUpgrade(1);
         setExhaust(true);
-        setCustomVar("CM",VariableType.MAGIC,SEARCHES,(card,m,base)->{
-            AbstractPower constellationCheck = AbstractDungeon.player.getPower(StarPower.POWER_ID);
-            AbstractPower nebulaCheck = AbstractDungeon.player.getPower(NebulaStarPower.POWER_ID);
-            int stars = base;
-            if (constellationCheck != null) stars += constellationCheck.amount;
-            if (nebulaCheck != null) stars += nebulaCheck.amount;
-            return stars;
-        });
+        setCustomVar("CM",VariableType.MAGIC,SEARCHES,(card,m,base)->CharRianne.checkConstellation(base));
 
         tags.add(JuxverseMod.CONSTELLATION);
     }

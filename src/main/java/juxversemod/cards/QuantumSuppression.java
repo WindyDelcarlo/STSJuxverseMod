@@ -19,11 +19,11 @@ public class QuantumSuppression extends BaseCard {
     );
 
     private static final int ENERGY = 1;
-    private static final int UPG_ENERGY = 1;
 
     public QuantumSuppression(){
         super(ID,info);
-        setMagic(ENERGY,UPG_ENERGY);
+        setMagic(ENERGY);
+        setCostUpgrade(1);
     }
 
     @Override

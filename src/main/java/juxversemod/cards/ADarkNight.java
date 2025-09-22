@@ -43,10 +43,8 @@ public class ADarkNight extends BaseCard {
     public void use(AbstractPlayer p, AbstractMonster m){
         AbstractPower constellationCheck = AbstractDungeon.player.getPower(StarPower.POWER_ID);
         AbstractPower nebulaCheck = AbstractDungeon.player.getPower(NebulaStarPower.POWER_ID);
-        int stars = 0;
-        if (constellationCheck != null) stars += constellationCheck.amount;
-        if (nebulaCheck != null) stars += nebulaCheck.amount;
-        if (stars >= magicNumber){
+
+        if (CharRianne.checkConstellation() >= magicNumber){
             addToBot(new VFXAction(new ShockWaveEffect(p.drawX,p.drawY, Color.valueOf("000000"), ShockWaveEffect.ShockWaveType.ADDITIVE)));
             addToBot(new DamageAllEnemiesAction(p,damage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.NONE));
         }

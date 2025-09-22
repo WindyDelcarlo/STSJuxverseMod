@@ -21,7 +21,7 @@ public class WintersMidnight extends BaseCard {
             AbstractCard.CardTarget.ENEMY,
             4
     );
-    private static final int DAMAGE = 4;
+    private static final int DAMAGE = 5;
     private static final int UPG_DAMAGE = 3;
 
     public WintersMidnight(){

@@ -20,7 +20,7 @@ public class ThoroughStudy extends BaseCard {
             AbstractCard.CardType.SKILL,
             AbstractCard.CardRarity.COMMON,
             AbstractCard.CardTarget.SELF,
-            2
+            1
     );
     public static final int DRAW = 2;
     public static final int UPG_DRAW = 1;

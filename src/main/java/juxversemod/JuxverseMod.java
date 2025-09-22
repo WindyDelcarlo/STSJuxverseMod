@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.dungeons.Exordium;
+import com.megacrit.cardcrawl.dungeons.TheBeyond;
 import com.megacrit.cardcrawl.dungeons.TheCity;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
@@ -83,7 +84,7 @@ public class JuxverseMod implements
         //You can find information about this on the BaseMod wiki page "Mod Config and Panel".
         BaseMod.registerModBadge(badgeTexture, info.Name, GeneralUtils.arrToString(info.Authors), info.Description, null);
 
-        BaseMod.addEvent(new AddEventParams.Builder(ForbiddenKnowledgeEvent.ID, ForbiddenKnowledgeEvent.class).dungeonID(TheCity.ID).dungeonID(Exordium.ID).create());
+        BaseMod.addEvent(new AddEventParams.Builder(ForbiddenKnowledgeEvent.ID, ForbiddenKnowledgeEvent.class).dungeonID(TheCity.ID).dungeonID(TheBeyond.ID).create());
     }
 
     /*----------Localization----------*/
@@ -168,6 +169,9 @@ public class JuxverseMod implements
     @Override
     public void receiveAddAudio() {
         BaseMod.addAudio("EM_WAVE",audioPath("EMPulse.ogg"));
+        BaseMod.addAudio("HYPERSPACE",audioPath("HyperspaceStrike.ogg"));
+        BaseMod.addAudio("STARFALL1",audioPath("Starfall1.ogg"));
+        BaseMod.addAudio("STARFALL2",audioPath("Starfall2.ogg"));
     }
 
     private void registerKeyword(KeywordInfo info) {

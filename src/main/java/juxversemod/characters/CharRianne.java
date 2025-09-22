@@ -24,12 +24,14 @@ import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import juxversemod.cards.DefendRianne;
 import juxversemod.cards.ReadTheStars;
 import juxversemod.cards.StrikeRianne;
 import juxversemod.cards.WallOfFrost;
+import juxversemod.powers.NebulaStarPower;
 import juxversemod.powers.StarPower;
 import juxversemod.relics.BandOfStableTime;
 
@@ -317,8 +319,8 @@ public class CharRianne extends CustomPlayer {
         AbstractGameEffect fallingStar;
         return fallingStar = new VfxBuilder(ImageMaster.TINY_STAR, p.drawX, 0f, 1.2f)
                 .setColor(Color.valueOf("99e5ff"))
-                .playSoundAt(0f,2f,"MAP_OPEN")
-                .playSoundAt(1.2f,1.5f,"ATTACK_MAGIC_FAST_1")
+                .playSoundAt(0f,"STARFALL2")
+                .playSoundAt(0.8f,1.5f,"ATTACK_MAGIC_FAST_1")
                 .moveX(p.drawX, m.drawX, VfxBuilder.Interpolations.SMOOTH)
                 .moveY(Settings.HEIGHT, m.hb.cY, VfxBuilder.Interpolations.EXP5IN)
                 .build();
@@ -354,12 +356,26 @@ public class CharRianne extends CustomPlayer {
         return spotlight = new VfxBuilder(ImageMaster.CONE_4,m.hb.cX,m.hb.cY+500f,1f)
                 .setAngle(-90f)
                 .setColor(Color.valueOf(colorCode))
+                .setAlpha(0.7F)
                 .playSoundAt(0f,"ATTACK_MAGIC_BEAM")
                 .build();
     }
 
-    public static int checkConstellationAmount() {
-        AbstractPower constellationCheck = AbstractDungeon.player.getPower(StarPower.POWER_ID);
-        return constellationCheck == null ? 0 : constellationCheck.amount;
+    public static int checkConstellation(int base){
+        if (AbstractDungeon.player == null){
+            return 0;
+        }
+        else {
+            AbstractPower constellationCheck = AbstractDungeon.player.getPower(StarPower.POWER_ID);
+            AbstractPower nebulaCheck = AbstractDungeon.player.getPower(NebulaStarPower.POWER_ID);
+            int stars = base;
+            if (constellationCheck != null) stars += constellationCheck.amount;
+            if (nebulaCheck != null) stars += nebulaCheck.amount;
+            return stars;
+        }
+    }
+
+    public static int checkConstellation(){
+        return checkConstellation(0);
     }
 }

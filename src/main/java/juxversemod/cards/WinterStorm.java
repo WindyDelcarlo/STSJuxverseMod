@@ -12,6 +12,8 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.GainStrengthPower;
+import com.megacrit.cardcrawl.powers.StrengthPower;
 import com.megacrit.cardcrawl.powers.WeakPower;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import juxversemod.characters.CharRianne;
@@ -30,7 +32,7 @@ public class WinterStorm extends BaseCard {
                 CardTarget.ENEMY,
                 2
         );
-        private static final int DAMAGE = 8;
+        private static final int DAMAGE = 12;
         private static final int UPG_DAMAGE = 4;
         private static final int WEAK = 1;
         private static final int UPG_WEAK = 1;
@@ -46,9 +48,18 @@ public class WinterStorm extends BaseCard {
             addToBot(new VFXAction(CharRianne.getFrostWindow(p,m)));
             addToBot(new VFXAction(getFrostShard2(p,m)));
             addToBot(new DamageAction(m, new DamageInfo(p,damage,DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.NONE));
-            for (AbstractMonster mo : getEnemies()){
-                addToBot(new ApplyPowerAction(mo,p,new WeakPower(mo,magicNumber,false)));
-            }
+            addToBot(new AbstractGameAction(){
+                @Override
+                public void update() {
+                    if (m.lastDamageTaken > 0) {
+                        addToTop(new ApplyPowerAction(m, p, new StrengthPower(m, -m.lastDamageTaken)));
+                        if (!m.hasPower("Artifact")) {
+                            addToTop(new ApplyPowerAction(m, p, new GainStrengthPower(m, m.lastDamageTaken)));
+                        }
+                    }
+                    this.isDone = true;
+                }
+            });
         }
 
     public static AbstractGameEffect getFrostShard2(AbstractPlayer p,AbstractMonster m){

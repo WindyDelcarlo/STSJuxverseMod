@@ -4,9 +4,13 @@ import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.EmptyDeckShuffleAction;
+import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
 import com.megacrit.cardcrawl.actions.utility.NewQueueCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.CardGroup;
+import com.megacrit.cardcrawl.cards.CardQueueItem;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.combat.ShockWaveEffect;
 import juxversemod.characters.CharRianne;
@@ -41,13 +45,17 @@ public class Imaginaria extends BaseCard {
                         this.isDone = true;
                         return;
                     }
-                    for (AbstractCard c : p.drawPile.group){
-                        addToBot(new NewQueueCardAction(c,true,false,true));
+                    CardGroup imaginariaGroup = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
+                    for (AbstractCard c : p.drawPile.group) {
+                            imaginariaGroup.addToRandomSpot(c);
+                    }
+                    for (AbstractCard c : imaginariaGroup.group){
+                        p.drawPile.removeCard(c);
+                        AbstractDungeon.actionManager.addCardQueueItem(new CardQueueItem(c,true,c.energyOnUse,true,true));
                     }
                 }
                 this.isDone = true;
             }
         });
-
     }
 }

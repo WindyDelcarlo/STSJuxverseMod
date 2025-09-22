@@ -36,6 +36,7 @@ public class HarmonicReplica extends BaseCard {
     public void use(AbstractPlayer p, AbstractMonster m){
         addToBot(new SelectCardsAction(p.discardPile.group,1,TEXT[0],false, c->true, l-> { for(AbstractCard c : l) {
             addToBot(new MakeTempCardInHandAction(c));
+            c.unfadeOut();
         }
         }));
     }

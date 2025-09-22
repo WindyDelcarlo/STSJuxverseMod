@@ -21,7 +21,7 @@ public class Timebomb extends BaseCard {
     );
     private static final int DAMAGE = 2;
     private static final int ATTACKS = 2;
-    private static final int UPG_ATTACKS = 2;
+    private static final int UPG_ATTACKS = 1;
 
     public Timebomb(){
         super(ID,info);

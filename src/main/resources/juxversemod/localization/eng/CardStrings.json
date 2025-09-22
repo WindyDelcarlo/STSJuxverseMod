@@ -9,8 +9,8 @@
   },
   "${modID}:ReadTheStars": {
     "NAME": "Read the Stars",
-    "DESCRIPTION": "Scry !${modID}:CM!. NL Draw !M! card. NL ${modID}:Constellation (Increases Scry)",
-    "UPGRADE_DESCRIPTION": "Scry !${modID}:CM!. NL Draw !M! cards. NL ${modID}:Constellation (Increases Scry)"
+    "DESCRIPTION": "Scry !${modID}:CM!. NL Gain !B! Block. NL ${modID}:Constellation (Increases Scry)",
+    "UPGRADE_DESCRIPTION": "Scry !${modID}:CM!. NL Gain !B! Block. NL ${modID}:Constellation (Increases Scry)"
   },
   "${modID}:WallOfFrost": {
     "NAME": "Wall of Frost",
@@ -19,19 +19,20 @@
   },
   "${modID}:Intercept": {
     "NAME": "Intercept",
-    "DESCRIPTION": "Deal !D! damage. If the enemy intends to attack, deal !D! damage again."
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy intends to attack, gain !B! Block. Otherwise, deal !D! damage again."
   },
   "${modID}:RayOfFrost": {
     "NAME": "Ray of Frost",
-    "DESCRIPTION": "Deal !D! damage. NL Scry !M!."
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy intends to attack, Stun it. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the enemy intends to attack, Stun it."
   },
   "${modID}:WinterStorm": {
     "NAME": "Winter Storm",
-    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Weak to ALL enemies."
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy is dealt unblocked damage, it loses that much Strength this this turn."
   },
   "${modID}:Soulseeking": {
     "NAME": "Soulseeking",
-    "DESCRIPTION": "Deal !D! damage. NL Draw !M! cards. NL Discard 1 card."
+    "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block. NL If the enemy intends to attack, gain [E] [E]."
   },
   "${modID}:FrostShards": {
     "NAME": "Frost Shards",
@@ -44,7 +45,7 @@
   "${modID}:EMPulse": {
     "NAME": "EM Pulse",
     "DESCRIPTION": "Deal !${modID}:CD! damage to ALL enemies. NL Gain !${modID}:CB!★ Block. NL ${modID}:Constellation (Increases Damage and Block)",
-    "UPGRADE_DESCRIPTION": "Deal !${modID}:CD! damage to ALL enemies. NL Gain !${modID}:CB!★ Block. NL Gain 1 permanent Star. NL ${modID}:Constellation (Increases Damage and Block)"
+    "UPGRADE_DESCRIPTION": "Deal !${modID}:CD! damage to ALL enemies. NL Gain !${modID}:CB!★ Block. NL Gain 1 Star. NL ${modID}:Constellation (Increases Damage and Block)"
   },
   "${modID}:HarshLight": {
     "NAME": "Harsh Light",
@@ -52,7 +53,7 @@
   },
   "${modID}:OpenReactor": {
     "NAME": "Open Reactor",
-    "DESCRIPTION": "Deal !D! damage. If this kills an enemy, gain [E] [E]."
+    "DESCRIPTION": "Deal !D! damage. NL Exhaust a card from your discard pile. If you Exhaust a skill, gain 1 Strength."
   },
   "${modID}:SpikedIceShell": {
     "NAME": "Spiked Ice Shell",
@@ -89,7 +90,7 @@
   },
   "${modID}:ThoroughStudy": {
     "NAME": "Thorough Study",
-    "DESCRIPTION": "Exhaust a card from your discard pile and from your hand. Draw !M! cards."
+    "DESCRIPTION": "Exhaust a card from your discard pile and from your hand. NL Draw !M! cards."
   },
   "${modID}:Offload": {
     "NAME": "Offload",
@@ -98,11 +99,11 @@
   },
   "${modID}:StructuralEngineering":{
     "NAME": "Structural Engineering",
-    "DESCRIPTION": "Whenever a card is Exhausted, deal !M! damage to ALL enemies and gain 1 permanent ${modID}:Star."
+    "DESCRIPTION": "Whenever a card is Exhausted, deal !M! damage to ALL enemies and gain 1 ${modID}:Star."
 },
   "${modID}:AstralSurvey": {
     "NAME": "Astral Survey",
-    "DESCRIPTION": "Whenever a card is Exhausted this turn, gain !M! temporary ${modID}:Star. NL Exhaust."
+    "DESCRIPTION": "Whenever you play a card this turn, gain !M! temporary ${modID}:Star."
   },
   "${modID}:WintersMidnight": {
     "NAME": "Winter's Midnight",
@@ -126,11 +127,11 @@
   },
   "${modID}:QuantumBreakdown": {
     "NAME": "Quantum Breakdown",
-    "DESCRIPTION": "Deal !D! damage. NL Draw a card. NL When this is Exhausted, play it."
+    "DESCRIPTION": "Deal !D! damage. NL Draw a card. NL If this card is Exhausted, play it."
   },
   "${modID}:EnergyGradient": {
     "NAME": "Energy Gradient",
-    "DESCRIPTION": "Scry !M! NL When this is Exhausted, apply !${modID}:M2! Weak to ALL enemies. ALL enemies lose !${modID}:M2! Strength."
+    "DESCRIPTION": "Scry !M!. NL If this card is Exhausted, apply !${modID}:M2! Weak to ALL enemies. ALL enemies lose !${modID}:M2! Strength."
   },
   "${modID}:SupergiantCharge": {
     "NAME": "Supergiant Charge",
@@ -138,7 +139,7 @@
   },
   "${modID}:FrigidAtmosphere": {
     "NAME": "Frigid Atmosphere",
-    "DESCRIPTION": "If the enemy intents to attack, enemy loses !M! Strength and you gain !M! Strength. NL Deal !D! damage."
+    "DESCRIPTION": "If the enemy intends to attack, enemy loses !M! Strength and you gain !M! Strength. NL Deal !D! damage."
   },
   "${modID}:TimeStep": {
     "NAME": "Time Step",
@@ -155,8 +156,7 @@
   },
   "${modID}:CosmicBeam": {
     "NAME": "Cosmic Beam",
-    "DESCRIPTION": "Deal !D! damage. NL Draw !M! card. Discard !M! card. NL If you have played no other cards this turn, gain [E] [E].",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Draw !M! cards. Discard !M! cards. NL If you have played no other cards this turn, gain [E] [E]."
+    "DESCRIPTION": "Deal !D! damage. NL Draw !M! card. Discard !M! card. NL If you have played no other cards this turn, gain [E] [E]."
   },
   "${modID}:HarmonicReplica": {
     "NAME": "Harmonic Replica",
@@ -186,7 +186,7 @@
   },
   "${modID}:BathedInStarlight": {
     "NAME": "Bathed in Starlight",
-    "DESCRIPTION": "Gain !${modID}:CB! Block. NL Gain 1 permanent ${modID}:Star. NL ${modID}:Constellation (Increases Block)"
+    "DESCRIPTION": "Gain !${modID}:CB! Block. NL Gain 1 ${modID}:Star. NL ${modID}:Constellation (Increases Block)"
   },
   "${modID}:StarlightArmor": {
     "NAME": "Starlight Armor",
@@ -199,7 +199,8 @@
   },
   "${modID}:Overstimulation": {
     "NAME": "Overstimulation",
-    "DESCRIPTION": "At the start of your turn, draw 1 fewer card and gain [E] [E]."
+    "DESCRIPTION": "At the start of your turn, draw 1 fewer card and gain [E] [E].",
+    "UPGRADE_DESCRIPTION": "At the start of your turn, draw 1 fewer card and gain [E] [E]."
   },
   "${modID}:ProtectionField": {
     "NAME": "Protection Field",
@@ -230,8 +231,8 @@
   },
   "${modID}:MemoriesOfPastSelves": {
     "NAME": "Memories of Past Selves",
-    "DESCRIPTION": "Draw !M! cards. NL Gain [E] [E]. NL Gain !B! Block. NL Reduce this card's cost by 1 this combat.",
-    "UPGRADE_DESCRIPTION": "Draw !M! cards. NL Gain [E] [E] [E]. NL Gain !B! Block. NL Reduce this card's cost by 1 this combat."
+    "DESCRIPTION": "Draw !M! card. NL Gain [E]. NL Gain !B! Block. NL Reduce this card's cost by 1 this combat.",
+    "UPGRADE_DESCRIPTION": "Draw !M! cards. NL Gain [E] [E]. NL Gain !B! Block. NL Reduce this card's cost by 1 this combat."
   },
   "${modID}:GravitationalSingularity": {
     "NAME": "Gravitational Singularity",
@@ -252,17 +253,16 @@
   },
   "${modID}:ParallelTimelines": {
     "NAME": "Parallel Timelines",
-    "DESCRIPTION": "This turn, your next card is played twice."
+    "DESCRIPTION": "This turn, your next card is played twice. NL You lose 1 Strength and 1 Dexterity."
   },
   "${modID}:QuantumSuppression": {
     "NAME": "Quantum Suppression",
-    "DESCRIPTION": "Whenever a card is Exhausted, gain [E].",
-    "UPGRADE_DESCRIPTION": "Whenever a card is Exhausted, gain [E] [E]."
+    "DESCRIPTION": "Whenever a card is Exhausted, gain [E]."
   },
   "${modID}:UnwindTheSprings": {
     "NAME": "Unwind the Springs",
-    "DESCRIPTION": "Ethereal. NL Gain 1 Intangible. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Ethereal. NL Gain 1 Intangible."
+    "DESCRIPTION": "Ethereal. NL You lose 4 HP. NL Gain 1 Intangible. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Ethereal. NL You lose 4 HP. NL Gain 1 Intangible."
   },
   "${modID}:StellarManifestation": {
     "NAME": "Stellar Manifestation",
@@ -270,8 +270,8 @@
   },
   "${modID}:AstralForm": {
     "NAME": "Astral Form",
-    "DESCRIPTION": "At the start of your turn, gain !${modID}:CM! ${modID}:Stars and !${modID}:CM! Block. NL ${modID}:Constellation (Increases Stars and Block)",
-    "UPGRADE_DESCRIPTION": "Gain 1 permanent ${modID}:Star. NL At the start of your turn, gain !${modID}:CM! permanent ${modID}:Stars and !${modID}:CM! Block. NL ${modID}:Constellation (Increases Stars and Block)"
+    "DESCRIPTION": "At the start of your turn, gain !${modID}:CM! ${modID}:Stars. NL ${modID}:Constellation (Increases Stars by 50%)",
+    "UPGRADE_DESCRIPTION": "Gain 2 ${modID}:Stars. At the start of your turn, gain !${modID}:CM! ${modID}:Stars. NL ${modID}:Constellation (Increases Stars by 50%)"
   },
   "${modID}:EyerginSoda": {
     "NAME":"Eyergin Soda",
@@ -303,7 +303,8 @@
   },
   "${modID}:TemporalSingularity": {
     "NAME": "Temporal Singularity",
-    "DESCRIPTION": "At the start of your turn, take an extra turn after this one if this isn't an extra turn."
+    "DESCRIPTION": "At the start of your turn, take an extra turn after this one if this isn't an extra turn.",
+    "UPGRADED_DESCRIPTION": "Retain. NL At the start of your turn, take an extra turn after this one if this isn't an extra turn."
   },
   "${modID}:CelestialRecord": {
     "NAME": "Celestial Record",

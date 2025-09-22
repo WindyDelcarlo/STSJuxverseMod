@@ -1,5 +1,6 @@
 package juxversemod.actions;
 
+import basemod.BaseMod;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.Settings;
@@ -33,7 +34,7 @@ public class LibraryResearchAction extends AbstractGameAction {
                 AbstractCard newCard = AbstractDungeon.cardRewardScreen.discoveryCard.makeStatEquivalentCopy();
                 newCard.current_x = -1000.0F * Settings.xScale;
                 newCard.exhaust = true;
-                if (AbstractDungeon.player.hand.size() < 10) {
+                if (AbstractDungeon.player.hand.size() < BaseMod.MAX_HAND_SIZE) {
                     AbstractDungeon.effectList.add(new ShowCardAndAddToHandEffect(newCard, Settings.WIDTH / 2.0F, Settings.HEIGHT / 2.0F));
                 } else {
                     AbstractDungeon.effectList.add(new ShowCardAndAddToDiscardEffect(newCard, Settings.WIDTH / 2.0F, Settings.HEIGHT / 2.0F));

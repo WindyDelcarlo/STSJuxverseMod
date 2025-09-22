@@ -29,19 +29,13 @@ public class GammaRayBurst extends BaseCard {
             5
     );
     private static final int DAMAGE = 25;
+    private static final int UPG_DAMAGE = 10;
     private static final int WEAK = 1;
 
     public GammaRayBurst() {
         super(ID, info);
-        setDamage(DAMAGE);
-        setCustomVar("CM",VariableType.MAGIC,WEAK,(card,m,base)-> {
-            AbstractPower constellationCheck = AbstractDungeon.player.getPower(StarPower.POWER_ID);
-            AbstractPower nebulaCheck = AbstractDungeon.player.getPower(NebulaStarPower.POWER_ID);
-            int stars = base;
-            if (constellationCheck != null) stars += constellationCheck.amount;
-            if (nebulaCheck != null) stars += nebulaCheck.amount;
-            return stars;
-        });
+        setDamage(DAMAGE,UPG_DAMAGE);
+        setCustomVar("CM",VariableType.MAGIC,WEAK,(card,m,base)-> CharRianne.checkConstellation(base));
         setExhaust(true,false);
 
         tags.add(JuxverseMod.CONSTELLATION);

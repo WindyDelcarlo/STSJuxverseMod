@@ -23,6 +23,7 @@ public class Chronolog extends BaseCard {
     public Chronolog(){
         super(ID,info);
         setMagic(SCRY,UPG_SCRY);
+        setExhaust(true);
     }
 
     @Override

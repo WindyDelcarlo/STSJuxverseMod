@@ -29,22 +29,14 @@ public class StarShower extends BaseCard {
             CardTarget.ALL_ENEMY,
             3
     );
-    private static final int DAMAGE = 4;
+    private static final int DAMAGE = 6;
     private static final int ATTACKS = 2;
     private static final int UPG_DAMAGE = 6;
 
     public StarShower(){
         super(ID,info);
         setDamage(DAMAGE,UPG_DAMAGE);
-        setCustomVar("CM",VariableType.MAGIC,ATTACKS,(card,m,base)->{
-            AbstractPower constellationCheck = AbstractDungeon.player.getPower(StarPower.POWER_ID);
-            AbstractPower nebulaCheck = AbstractDungeon.player.getPower(NebulaStarPower.POWER_ID);
-            int stars = base;
-            if (constellationCheck != null) stars += constellationCheck.amount;
-            if (nebulaCheck != null) stars += nebulaCheck.amount;
-            return stars;
-
-        });
+        setCustomVar("CM",VariableType.MAGIC,ATTACKS,(card,m,base)->CharRianne.checkConstellation(base));
 
         tags.add(JuxverseMod.CONSTELLATION);
     }
@@ -60,7 +52,7 @@ public class StarShower extends BaseCard {
                         addToTop(new VFXAction(new VfxBuilder(ImageMaster.TINY_STAR, p.drawX, 0f, 0.6f)
                                 .setColor(Color.valueOf("99e5ff"))
                                 .playSoundAt(0f, 2.5f, "ORB_DARK_CHANNEL")
-                                .playSoundAt(0.6f, 2f, "ATTACK_MAGIC_FAST_1")
+                                .playSoundAt(0.2f, 2f, "ATTACK_MAGIC_FAST_1")
                                 .moveX(p.drawX, target.drawX, VfxBuilder.Interpolations.SMOOTH)
                                 .moveY(Settings.HEIGHT, target.hb.cY, VfxBuilder.Interpolations.EXP5IN)
                                 .build()));

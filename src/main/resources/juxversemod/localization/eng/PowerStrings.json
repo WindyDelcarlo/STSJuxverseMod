@@ -56,8 +56,8 @@
   "${modID}:AstralSurveyPower": {
       "NAME": "Astral Survey",
       "DESCRIPTIONS": [
-        "Whenever a card is Exhausted this turn, gain #b",
-        " #y${modID}:Star."
+        "Whenever you play a card this turn, gain #b",
+        " #yStar."
       ]
     },
   "${modID}:TimeStepPower": {
@@ -170,7 +170,7 @@
   },
   "${modID}:AstralFormPower": {
     "NAME": "Astral Form",
-    "DESCRIPTIONS": ["At the start of your turn, gain #b1 #yStar and #b1 #yBlock. (Increased by Stars)"]
+    "DESCRIPTIONS": ["At the start of your turn, gain #b1 #yStar. (Increased by Stars)"]
   },
   "${modID}:EyerginSodaPower": {
     "NAME": "Eyergin Soda",

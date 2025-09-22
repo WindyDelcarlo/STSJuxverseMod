@@ -19,7 +19,7 @@ public class TimeStep extends BaseCard {
             AbstractCard.CardType.SKILL,
             AbstractCard.CardRarity.UNCOMMON,
             AbstractCard.CardTarget.SELF,
-            2
+            1
     );
     public static final int BLOCK = 2;
     public static final int UPG_BLOCK = 1;

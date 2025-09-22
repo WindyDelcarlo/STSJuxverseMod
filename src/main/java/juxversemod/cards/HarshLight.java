@@ -35,22 +35,8 @@ public class HarshLight extends BaseCard {
     public HarshLight() {
         super(ID, info);
 
-        setCustomVar("CD",VariableType.DAMAGE,DAMAGE,UPG_DAMAGE,(card,m,base)->{
-            AbstractPower constellationCheck = AbstractDungeon.player.getPower(StarPower.POWER_ID);
-            AbstractPower nebulaCheck = AbstractDungeon.player.getPower(NebulaStarPower.POWER_ID);
-            int stars = base;
-            if (constellationCheck != null) stars += constellationCheck.amount;
-            if (nebulaCheck != null) stars += nebulaCheck.amount;
-            return stars;
-        });
-        setCustomVar("CM",VariableType.MAGIC,WEAK,UPG_WEAK,(card,m,base)-> {
-            AbstractPower constellationCheck = AbstractDungeon.player.getPower(StarPower.POWER_ID);
-            AbstractPower nebulaCheck = AbstractDungeon.player.getPower(NebulaStarPower.POWER_ID);
-            int stars = base;
-            if (constellationCheck != null) stars += constellationCheck.amount;
-            if (nebulaCheck != null) stars += nebulaCheck.amount;
-            return stars;
-        });
+        setCustomVar("CD",VariableType.DAMAGE,DAMAGE,UPG_DAMAGE,(card,m,base)->CharRianne.checkConstellation(base));
+        setCustomVar("CM",VariableType.MAGIC,WEAK,UPG_WEAK,(card,m,base)-> CharRianne.checkConstellation(base));
 
         tags.add(JuxverseMod.CONSTELLATION);
     }
