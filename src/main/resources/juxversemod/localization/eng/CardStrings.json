@@ -69,8 +69,7 @@
   },
   "${modID}:Counterspell": {
     "NAME": "Counterspell",
-    "DESCRIPTION": "Remove !M! debuff from you. NL Draw 2 cards.",
-    "UPGRADE_DESCRIPTION": "Remove !M! debuffs from you. NL Draw two cards."
+    "DESCRIPTION": "Gain !M! Artifact. NL Draw 2 cards."
   },
   "${modID}:SearchTheSky": {
     "NAME": "Search the Sky",
@@ -198,7 +197,7 @@
   "${modID}:Overstimulation": {
     "NAME": "Overstimulation",
     "DESCRIPTION": "At the start of your turn, draw 1 fewer card and gain [E] [E].",
-    "UPGRADE_DESCRIPTION": "At the start of your turn, draw 1 fewer card and gain [E] [E]."
+    "UPGRADE_DESCRIPTION": "At the start of your turn, draw 1 fewer card and gain [E] [E]. NL Innate."
   },
   "${modID}:ProtectionField": {
     "NAME": "Protection Field",
@@ -238,7 +237,8 @@
   },
   "${modID}:CoreRepair": {
     "NAME": "Core Repair",
-    "DESCRIPTION": "Gain !B! Block and !M! Artifact."
+    "DESCRIPTION": "Gain !B! Block. NL Remove !M! debuff from you.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Remove !M! debuffs from you."
   },
   "${modID}:HyperspaceArray": {
     "NAME": "Hyperspace Array",

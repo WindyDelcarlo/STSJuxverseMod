@@ -32,3 +32,7 @@ v1.0.1 --
 - Starlight Armor+ no longer gives you double your stars to block. Instead, it gives 3+Stars to block. 
 - Counterspell now gives Artifact instead of clearing one stack of debuffs. (It makes it harder to get insane numbers of Stars)
 - Core Repair now clears a stack of debuffs rather than giving Artifact. 
+
+v1.0.2 --
+- Counterspell and Core Repair's text boxes now reflect the change from 1.0.1.
+- Overstimulation now says that it's innate when you upgrade it, like it was supposed to the first time.
