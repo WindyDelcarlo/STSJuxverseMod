@@ -21,7 +21,7 @@ public class StarlightArmor extends BaseCard {
     );
 
     private static final int STACKS = 1;
-    private static final int UPG_STACKS = 2;
+    private static final int UPG_STACKS = 1;
 
     public StarlightArmor(){
         super(ID,info);

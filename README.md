@@ -36,3 +36,10 @@ v1.0.1 --
 v1.0.2 --
 - Counterspell and Core Repair's text boxes now reflect the change from 1.0.1.
 - Overstimulation now says that it's innate when you upgrade it, like it was supposed to the first time.
+
+v1.0.3 --
+- I was meant to make these edits during the last version, oops
+- Starlight Armor+ is still better than Metallicize. Knocking it down to 2+.
+- Ray of Frost was busted. (Stun will do that.) Now temporarily lowers their strength by 2(3).
+- Pulled the duplicate "this" off of Winter Storm. I would say I don't know how I missed that, but brains are just Like That.
+- Despite the fact that previous patch notes called her Starseeker, the in-game text said Starmaker instead, and that sounds more on brand, so she keeps it.

@@ -23,11 +23,11 @@
   },
   "${modID}:RayOfFrost": {
     "NAME": "Ray of Frost",
-    "DESCRIPTION": "Deal !D! damage. NL If the enemy intends to attack, Stun it. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage. NL Enemy loses !M! Strength this turn."
   },
   "${modID}:WinterStorm": {
     "NAME": "Winter Storm",
-    "DESCRIPTION": "Deal !D! damage. NL If the enemy is dealt unblocked damage, it loses that much Strength this this turn."
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy is dealt unblocked damage, it loses that much Strength this turn."
   },
   "${modID}:Soulseeking": {
     "NAME": "Soulseeking",

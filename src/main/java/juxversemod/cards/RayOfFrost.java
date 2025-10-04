@@ -10,6 +10,8 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.GainStrengthPower;
+import com.megacrit.cardcrawl.powers.StrengthPower;
 import com.megacrit.cardcrawl.powers.WeakPower;
 import juxversemod.characters.CharRianne;
 import juxversemod.util.CardStats;
@@ -25,19 +27,20 @@ public class RayOfFrost extends BaseCard {
     );
     private static final int DAMAGE = 3;
     private static final int UPG_DAMAGE = 6;
+    private static final int DRAIN = 2;
+    private static final int UPG_DRAIN = 1;
 
     public RayOfFrost(){
         super(ID,info);
         setDamage(DAMAGE,UPG_DAMAGE);
-        setExhaust(true);
+        setMagic(DRAIN,UPG_DRAIN);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new VFXAction(CharRianne.getFrost(p, m)));
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.NONE));
-        if (m.getIntentBaseDmg() > 0) {
-            addToBot(new StunMonsterAction(m, p));
-        }
+        addToBot(new ApplyPowerAction(m,p, new StrengthPower(m,-magicNumber)));
+        addToBot(new ApplyPowerAction(m,p, new GainStrengthPower(m,magicNumber)));
     }
 }
